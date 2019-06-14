@@ -1,0 +1,37 @@
+6574:S 14 Jun 2019 10:10:17.127 # Connection with master lost.
+6574:S 14 Jun 2019 10:10:17.127 * Caching the disconnected master state.
+6574:S 14 Jun 2019 10:10:17.726 * Connecting to MASTER 172.16.63.51:6387
+6574:S 14 Jun 2019 10:10:17.726 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:10:17.726 # Error condition on socket for SYNC: Connection refused
+6574:S 14 Jun 2019 10:10:18.729 * Connecting to MASTER 172.16.63.51:6387
+6574:S 14 Jun 2019 10:10:18.729 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:10:51.179 # Error condition on socket for SYNC: No route to host
+6574:S 14 Jun 2019 10:10:51.812 * Connecting to MASTER 172.16.63.51:6387
+6574:S 14 Jun 2019 10:10:51.812 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:10:54.184 # Error condition on socket for SYNC: No route to host
+6574:S 14 Jun 2019 10:10:54.821 * Connecting to MASTER 172.16.63.51:6387
+6574:S 14 Jun 2019 10:10:54.821 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:10:57.190 # Error condition on socket for SYNC: No route to host
+6574:S 14 Jun 2019 10:10:57.827 * Connecting to MASTER 172.16.63.51:6387
+6574:S 14 Jun 2019 10:10:57.828 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:11:00.197 # Error condition on socket for SYNC: No route to host
+6574:S 14 Jun 2019 10:11:00.836 * Connecting to MASTER 172.16.63.51:6387
+6574:S 14 Jun 2019 10:11:00.836 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:11:03.202 # Error condition on socket for SYNC: No route to host
+6574:S 14 Jun 2019 10:11:03.844 * Connecting to MASTER 172.16.63.51:6387
+6574:S 14 Jun 2019 10:11:03.844 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:11:05.330 * REPLICAOF 172.16.63.52:6387 enabled (user request from 'id=21 addr=172.16.63.53:53540 fd=9 name=sentinel-547b4d72-cmd age=3178 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=152 qbuf-free=32616 obl=36 oll=0 omem=0 events=r cmd=exec')
+6574:S 14 Jun 2019 10:11:05.333 # CONFIG REWRITE executed with success.
+6574:S 14 Jun 2019 10:11:05.849 * Connecting to MASTER 172.16.63.52:6387
+6574:S 14 Jun 2019 10:11:05.850 * MASTER <-> REPLICA sync started
+6574:S 14 Jun 2019 10:11:05.850 * Non blocking connect for SYNC fired the event.
+6574:S 14 Jun 2019 10:11:05.851 * Master replied to PING, replication can continue...
+6574:S 14 Jun 2019 10:11:05.851 * Trying a partial resynchronization (request ddb2562785fe4055bfdb33826b134daa0db50ba2:945105).
+6574:S 14 Jun 2019 10:11:05.852 * Successful partial resynchronization with master.
+6574:S 14 Jun 2019 10:11:05.852 # Master replication ID changed to db3b84e4913ff9c6768d2f5576cfc853778594ce
+6574:S 14 Jun 2019 10:11:05.852 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+6574:S 14 Jun 2019 10:13:12.089 * 1 changes in 300 seconds. Saving...
+6574:S 14 Jun 2019 10:13:12.090 * Background saving started by pid 7022
+7022:C 14 Jun 2019 10:13:12.095 * DB saved on disk
+7022:C 14 Jun 2019 10:13:12.096 * RDB: 0 MB of memory used by copy-on-write
+6574:S 14 Jun 2019 10:13:12.191 * Background saving terminated with success

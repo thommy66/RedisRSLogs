@@ -1,0 +1,523 @@
+2019-06-14 10:08:08.045 +02:00 [INF] [] [ThreadId: 1]   The log level is set to 'Debug'
+2019-06-14 10:08:08.880 +02:00 [INF] [] [ThreadId: 1]   The current version of BizBus License Server is 1.0.2.17046
+2019-06-14 10:08:09.090 +02:00 [DBG] [] [ThreadId: 1]   BuildWebHost() entered. Using IP Address 0.0.0.0
+2019-06-14 10:08:09.702 +02:00 [INF] [BizBusLicenseServer.Startup] [ThreadId: 1]   Entering Startup.Configure()...
+2019-06-14 10:08:10.516 +02:00 [INF] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Entering AppHost.Configure()
+2019-06-14 10:08:10.579 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   The Redis Configuration DB is a ReplicaSet, need to register Redis Sentinels....
+2019-06-14 10:08:10.641 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Sentinel hosts: ["dbinfra1.tbhome.int:26387","dbinfra2.tbhome.int:26387","dbinfra3.tbhome.int:26387"], Redis Cfg Server ReplicaSet name: redis_6387_config
+2019-06-14 10:08:11.278 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   RedisStats after sentinel.Start(): '{
+	TotalCommandsSent: 12,
+	TotalFailovers: 0,
+	TotalDeactivatedClients: 0,
+	TotalFailedSentinelWorkers: 0,
+	TotalForcedMasterFailovers: 0,
+	TotalInvalidMasters: 0,
+	TotalNoMastersFound: 0,
+	TotalClientsCreated: 2,
+	TotalClientsCreatedOutsidePool: 0,
+	TotalSubjectiveServersDown: 0,
+	TotalObjectiveServersDown: 0,
+	TotalPendingDeactivatedClients: 0,
+	TotalRetryCount: 0,
+	TotalRetrySuccess: 0,
+	TotalRetryTimedout: 0
+}'
+2019-06-14 10:08:11.635 +02:00 [DBG] [BizBusLicenseServer.ServiceInterface.Util.GlobalData] [ThreadId: 1]   Constructing GlobalData ...
+2019-06-14 10:08:11.771 +02:00 [DBG] [BizBusLicenseServer.ServiceInterface.Repositories.SysConfigRepository] [ThreadId: 1]   Success.
+2019-06-14 10:08:11.800 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   The Redis Admin DB is a ReplicaSet, need to register Redis Sentinels....
+2019-06-14 10:08:11.821 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Sentinel admin DB hosts: ["dbinfra1.tbhome.int:26386","dbinfra2.tbhome.int:26386","dbinfra3.tbhome.int:26386"], Redis admin server ReplicaSet name: redis_6386_admin
+2019-06-14 10:08:11.951 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   RedisStats after sentinel.Start(): '{
+	TotalCommandsSent: 82,
+	TotalFailovers: 0,
+	TotalDeactivatedClients: 0,
+	TotalFailedSentinelWorkers: 0,
+	TotalForcedMasterFailovers: 0,
+	TotalInvalidMasters: 0,
+	TotalNoMastersFound: 0,
+	TotalClientsCreated: 5,
+	TotalClientsCreatedOutsidePool: 0,
+	TotalSubjectiveServersDown: 0,
+	TotalObjectiveServersDown: 0,
+	TotalPendingDeactivatedClients: 0,
+	TotalRetryCount: 0,
+	TotalRetrySuccess: 0,
+	TotalRetryTimedout: 0
+}'
+2019-06-14 10:08:11.974 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   MongoDB connection string: 'mongodb://dbinfra1.tbhome.int:37017,dbinfra2.tbhome.int:37017,dbinfra3.tbhome.int:37017,dbinfra4.tbhome.int:37017,dbinfra5.tbhome.int:37017?replicaSet=bbdata01_bedi_rs&uuidRepresentation=standard'
+2019-06-14 10:08:11.997 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Registering MongoDB repositories with IOC...
+2019-06-14 10:08:12.015 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Initializing license server DB...
+2019-06-14 10:08:13.436 +02:00 [INF] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Registering several jobs with the scheduler of the OperationsManagerServer 
+2019-06-14 10:08:13.536 +02:00 [INF] [BizBusLicenseServer.AppHost] [ThreadId: 1]   The runtime environment is 'BediDevelRs', the CORS feature is DISABLED.
+2019-06-14 10:08:13.549 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   The Redis Cache DB is a ReplicaSet, need to register Redis Sentinels....
+2019-06-14 10:08:13.562 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Sentinel cache DB hosts: ["dbinfra1.tbhome.int:26385","dbinfra2.tbhome.int:26385","dbinfra3.tbhome.int:26385"], Redis cache server ReplicaSet name: redis_6385_cache
+2019-06-14 10:08:13.619 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   RedisStats after sentinel.Start(): '{
+	TotalCommandsSent: 96,
+	TotalFailovers: 0,
+	TotalDeactivatedClients: 0,
+	TotalFailedSentinelWorkers: 0,
+	TotalForcedMasterFailovers: 0,
+	TotalInvalidMasters: 0,
+	TotalNoMastersFound: 0,
+	TotalClientsCreated: 7,
+	TotalClientsCreatedOutsidePool: 0,
+	TotalSubjectiveServersDown: 0,
+	TotalObjectiveServersDown: 0,
+	TotalPendingDeactivatedClients: 0,
+	TotalRetryCount: 0,
+	TotalRetrySuccess: 0,
+	TotalRetryTimedout: 0
+}'
+2019-06-14 10:08:13.633 +02:00 [INF] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Registering RabbitMQ server using the EasyNetQ library....
+2019-06-14 10:08:14.224 +02:00 [DBG] [EasyNetQ.PersistentConnection] [ThreadId: 1]   Trying to connect
+2019-06-14 10:08:14.445 +02:00 [DBG] [EasyNetQ.PersistentConnection] [ThreadId: 1]   OnConnected event fired
+2019-06-14 10:08:14.482 +02:00 [INF] [EasyNetQ.PersistentConnection] [ThreadId: 1]   Connected to broker rabbitmq-rs.tbhome.int, port 5672, vhost bbls
+2019-06-14 10:08:14.579 +02:00 [INF] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Successfully connected to RabbitMQ server.
+2019-06-14 10:08:14.602 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1]   Register general objects with IOC container....
+2019-06-14 10:08:15.509 +02:00 [DBG] [BizBusLicenseServer.ServiceInterface.Repositories.LsUserRepository] [ThreadId: 1] n/a n/a (n/a) Creating BizBus System Account 'Linuxfabrik (BizBus system account Linuxfabrik)' in Redis user database...
+2019-06-14 10:08:15.596 +02:00 [DBG] [BizBusLicenseServer.ServiceInterface.Repositories.SysDataRepository] [ThreadId: 1] n/a n/a (n/a) Retrieving number of region data entries in database.
+2019-06-14 10:08:15.804 +02:00 [DBG] [BizBusLicenseServer.ServiceInterface.Repositories.SysDataRepository] [ThreadId: 1] n/a n/a (n/a) Found 548 region objects in database.
+2019-06-14 10:08:15.808 +02:00 [DBG] [BizBusLicenseServer.ServiceInterface.Repositories.SysDataRepository] [ThreadId: 1] n/a n/a (n/a) Retrieving number of terms of payment stored in the system.
+2019-06-14 10:08:15.823 +02:00 [DBG] [BizBusLicenseServer.ServiceInterface.Repositories.SysDataRepository] [ThreadId: 1] n/a n/a (n/a) Found 5 terms of payment objects.
+2019-06-14 10:08:15.827 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 1] n/a n/a (n/a) RegisterMsgSubscriptions() entered.
+2019-06-14 10:08:15.918 +02:00 [INF] [EasyNetQ.Consumer.InternalConsumer] [ThreadId: 1] n/a n/a (n/a) Declared consumer with consumerTag 1186b900-fe4b-4469-8f99-8c916a771f84 on queue Q.Ls.Commands and configuration [Priority=0, IsExclusive=False, PrefetchCount=1]
+2019-06-14 10:08:15.940 +02:00 [INF] [EasyNetQ.Consumer.InternalConsumer] [ThreadId: 1] n/a n/a (n/a) Declared consumer with consumerTag 5c2c750d-c7e1-435c-876f-41b97ae77c34 on queue Q.Ls.Confirmations and configuration [Priority=0, IsExclusive=False, PrefetchCount=1]
+2019-06-14 10:08:15.952 +02:00 [INF] [EasyNetQ.Consumer.InternalConsumer] [ThreadId: 1] n/a n/a (n/a) Declared consumer with consumerTag 475f0302-de1a-4868-ad53-05a2737e49a9 on queue Q.Ls.Errors and configuration [Priority=0, IsExclusive=False, PrefetchCount=1]
+2019-06-14 10:08:15.968 +02:00 [INF] [EasyNetQ.Consumer.InternalConsumer] [ThreadId: 1] n/a n/a (n/a) Declared consumer with consumerTag 5f9189bf-7ea0-4af6-9d46-c01aa22f4883 on queue Q.Ls.Broadcasts and configuration [Priority=0, IsExclusive=False, PrefetchCount=1]
+2019-06-14 10:08:16.475 +02:00 [WRN] [Quartz.Simpl.TaskSchedulingThreadPool] [ThreadId: 1] n/a n/a (n/a) Thread priority is no longer supported for thread pool, ignoring
+2019-06-14 10:10:22.297 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 6] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6387_config. Message: '8' Channel '+new-epoch'...
+2019-06-14 10:10:22.298 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 6] n/a n/a (n/a) RedisStats: '{
+	TotalCommandsSent: 111,
+	TotalFailovers: 0,
+	TotalDeactivatedClients: 0,
+	TotalFailedSentinelWorkers: 0,
+	TotalForcedMasterFailovers: 0,
+	TotalInvalidMasters: 0,
+	TotalNoMastersFound: 0,
+	TotalClientsCreated: 8,
+	TotalClientsCreatedOutsidePool: 0,
+	TotalSubjectiveServersDown: 2,
+	TotalObjectiveServersDown: 0,
+	TotalPendingDeactivatedClients: 0,
+	TotalRetryCount: 0,
+	TotalRetrySuccess: 0,
+	TotalRetryTimedout: 0
+}'
+2019-06-14 10:10:22.300 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 6] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6387_config. Message: '75d6da2fe2b67695af9e015c8fc39766a02e7a41 8' Channel '+vote-for-leader'...
+2019-06-14 10:10:22.301 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 6] n/a n/a (n/a) RedisStats: '{
+	TotalCommandsSent: 111,
+	TotalFailovers: 0,
+	TotalDeactivatedClients: 0,
+	TotalFailedSentinelWorkers: 0,
+	TotalForcedMasterFailovers: 0,
+	TotalInvalidMasters: 0,
+	TotalNoMastersFound: 0,
+	TotalClientsCreated: 8,
+	TotalClientsCreatedOutsidePool: 0,
+	TotalSubjectiveServersDown: 2,
+	TotalObjectiveServersDown: 0,
+	TotalPendingDeactivatedClients: 0,
+	TotalRetryCount: 0,
+	TotalRetrySuccess: 0,
+	TotalRetryTimedout: 0
+}'
+2019-06-14 10:10:54.572 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 Could not connect to redis Instance at dbinfra1.tbhome.int:26386
+2019-06-14 10:10:54.574 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:10:54.610 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.CreateNoMoreDataError() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 355
+   at ServiceStack.Redis.RedisNativeClient.ReadMultiData() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 1024
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 616
+2019-06-14 10:10:54.615 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26386
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.CreateNoMoreDataError() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 355
+   at ServiceStack.Redis.RedisNativeClient.ReadMultiData() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 1024
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 616
+2019-06-14 10:10:54.742 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 Exceeded timeout of 00:00:10
+2019-06-14 10:10:54.778 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Exceeded timeout of 00:00:10
+2019-06-14 10:10:57.782 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 Could not connect to redis Instance at dbinfra1.tbhome.int:26386
+2019-06-14 10:10:57.783 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:10:57.795 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:10:57.832 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26386
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:00.788 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:11:00.788 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 Could not connect to redis Instance at dbinfra1.tbhome.int:26386
+2019-06-14 10:11:00.822 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:00.824 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26386
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:03.794 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:11:03.827 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 Could not connect to redis Instance at dbinfra1.tbhome.int:26386
+2019-06-14 10:11:03.840 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26386
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:03.850 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 Could not connect to redis Instance at dbinfra1.tbhome.int:26387
+2019-06-14 10:11:03.851 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:03.851 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26387
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.CreateNoMoreDataError() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 355
+   at ServiceStack.Redis.RedisNativeClient.ReadMultiData() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 1024
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 616
+2019-06-14 10:11:03.856 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 Exceeded timeout of 00:00:10
+2019-06-14 10:11:06.830 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 Could not connect to redis Instance at dbinfra1.tbhome.int:26387
+2019-06-14 10:11:06.837 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 Could not connect to redis Instance at dbinfra1.tbhome.int:26386
+2019-06-14 10:11:06.852 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:11:06.852 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26387
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:06.855 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:06.858 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26386
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:06.861 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Exceeded timeout of 00:00:10
+2019-06-14 10:11:06.862 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 7] n/a n/a (n/a) #12 Exceeded timeout of 00:00:10
+2019-06-14 10:11:09.806 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 Could not connect to redis Instance at dbinfra1.tbhome.int:26387
+2019-06-14 10:11:09.810 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26387
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:12.811 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 Could not connect to redis Instance at dbinfra1.tbhome.int:26387
+2019-06-14 10:11:12.816 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26387
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:13.378 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: 'master redis_6385_cache 172.16.63.51 6385' Channel '-failover-abort-not-elected'...
+2019-06-14 10:11:15.817 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 Could not connect to redis Instance at dbinfra1.tbhome.int:26387
+2019-06-14 10:11:15.821 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26387
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:15.824 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 6] n/a n/a (n/a) #4 Exceeded timeout of 00:00:10
+2019-06-14 10:11:23.349 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: '9' Channel '+new-epoch'...
+2019-06-14 10:11:23.350 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: 'master redis_6385_cache 172.16.63.51 6385' Channel '+try-failover'...
+2019-06-14 10:11:23.351 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: 'eb471ac2d6b9eb0655d302dd9f92bfb93314830e 9' Channel '+vote-for-leader'...
+2019-06-14 10:11:33.739 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: 'master redis_6385_cache 172.16.63.51 6385' Channel '-failover-abort-not-elected'...
+2019-06-14 10:11:43.590 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: '10' Channel '+new-epoch'...
+2019-06-14 10:11:43.592 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: '58207b8b6397b29b5467fde1d8fbdddbe0471512 10' Channel '+vote-for-leader'...
+2019-06-14 10:11:43.847 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: 'sentinel 58207b8b6397b29b5467fde1d8fbdddbe0471512 172.16.63.52 26385 @ redis_6385_cache 172.16.63.51 6385' Channel '+config-update-from'...
+2019-06-14 10:11:45.885 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:11:45.890 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:48.891 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:11:48.896 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:51.898 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:11:51.901 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:54.903 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:11:54.906 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:11:54.910 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 10] n/a n/a (n/a) #18 Exceeded timeout of 00:00:10
+2019-06-14 10:11:54.914 +02:00 [DBG] [BizBusLicenseServer.AppHost] [ThreadId: 10] n/a n/a (n/a) ONSENTINELMESSAGERECEIVED event received from redis_6385_cache. Message: 'slave 172.16.63.53:6385 172.16.63.53 6385 @ redis_6385_cache 172.16.63.52 6385' Channel '+slave'...
+2019-06-14 10:14:49.276 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:14:49.297 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:14:52.281 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:14:52.284 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:14:55.285 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:14:55.289 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:14:58.296 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:14:58.299 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:01.299 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:01.302 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:01.306 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Exceeded timeout of 00:00:10
+2019-06-14 10:15:04.303 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:04.307 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:07.310 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:07.314 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:10.317 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:10.320 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:13.323 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:13.326 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:13.329 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 21] n/a n/a (n/a) #18 Exceeded timeout of 00:00:10
+2019-06-14 10:15:34.363 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:34.367 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:37.373 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:37.379 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:40.379 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:40.383 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:43.386 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:43.391 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:46.391 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:46.395 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:46.398 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Exceeded timeout of 00:00:10
+2019-06-14 10:15:49.397 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:49.401 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:52.404 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:52.408 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:55.410 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:55.413 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:58.415 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Could not connect to redis Instance at dbinfra1.tbhome.int:26385
+2019-06-14 10:15:58.419 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 SocketException in SendReceive, retrying...
+System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (113): No route to host 172.16.63.51:26385
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.Socket.Connect(IPAddress address, Int32 port)
+   at ServiceStack.Redis.RedisNativeClient.Connect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 102
+   at ServiceStack.Redis.RedisNativeClient.Reconnect() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 330
+   at ServiceStack.Redis.RedisNativeClient.TryConnectIfNeeded() in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 311
+   at ServiceStack.Redis.RedisNativeClient.SendReceive[T](Byte[][] cmdWithBinaryArgs, Func`1 fn, Action`1 completePipelineFn, Boolean sendWithoutRead) in C:\BuildAgent\work\b2a0bfe2b1c9a118\src\ServiceStack.Redis\RedisNativeClient_Utils.cs:line 583
+2019-06-14 10:15:58.422 +02:00 [ERR] [ServiceStack.Redis.RedisNativeClient] [ThreadId: 20] n/a n/a (n/a) #18 Exceeded timeout of 00:00:10
+2019-06-14 10:16:34.890 +02:00 [INF] [BizBusLicenseServer.Startup] [ThreadId: 2] n/a n/a (n/a) Shutting down BizBus License server, performing some cleanup ...
+2019-06-14 10:16:35.503 +02:00 [INF] [BizBusLicenseServer.Startup] [ThreadId: 2] n/a n/a (n/a) I am connected to RabbitMQ and need to disconnect now...
+2019-06-14 10:16:35.538 +02:00 [INF] [EasyNetQ.Consumer.BasicConsumer] [ThreadId: 11] n/a n/a (n/a) Consumer with consumerTag 1186b900-fe4b-4469-8f99-8c916a771f84 on queue Q.Ls.Commands has shutdown with reason AMQP close-reason, initiated by Application, code=200, text="Goodbye", classId=0, methodId=0, cause=
+2019-06-14 10:16:35.551 +02:00 [INF] [EasyNetQ.Consumer.BasicConsumer] [ThreadId: 11] n/a n/a (n/a) Consumer with consumerTag 5c2c750d-c7e1-435c-876f-41b97ae77c34 on queue Q.Ls.Confirmations has shutdown with reason AMQP close-reason, initiated by Application, code=200, text="Goodbye", classId=0, methodId=0, cause=
+2019-06-14 10:16:35.564 +02:00 [INF] [EasyNetQ.Consumer.BasicConsumer] [ThreadId: 11] n/a n/a (n/a) Consumer with consumerTag 5f9189bf-7ea0-4af6-9d46-c01aa22f4883 on queue Q.Ls.Broadcasts has shutdown with reason AMQP close-reason, initiated by Application, code=200, text="Goodbye", classId=0, methodId=0, cause=
+2019-06-14 10:16:35.575 +02:00 [INF] [EasyNetQ.Consumer.BasicConsumer] [ThreadId: 11] n/a n/a (n/a) Consumer with consumerTag 475f0302-de1a-4868-ad53-05a2737e49a9 on queue Q.Ls.Errors has shutdown with reason AMQP close-reason, initiated by Application, code=200, text="Goodbye", classId=0, methodId=0, cause=
+2019-06-14 10:16:35.592 +02:00 [INF] [BizBusLicenseServer.Startup] [ThreadId: 2] n/a n/a (n/a) Am I connected to RabbitMQ: 'False'
+2019-06-14 10:16:35.592 +02:00 [INF] [BizBusLicenseServer.Startup] [ThreadId: 2] n/a n/a (n/a) Cleanup done.

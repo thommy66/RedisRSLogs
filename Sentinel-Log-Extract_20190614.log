@@ -1,0 +1,34 @@
+6767:X 14 Jun 2019 10:10:22.178 # +sdown master redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:10:22.178 # +sdown sentinel f849e1d51d636ec445868d5d1377ddb033b70983 172.16.63.51 26387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:10:22.282 # +new-epoch 8
+6767:X 14 Jun 2019 10:10:22.289 # +vote-for-leader 75d6da2fe2b67695af9e015c8fc39766a02e7a41 8
+6767:X 14 Jun 2019 10:10:23.252 # +odown master redis_6387_config 172.16.63.51 6387 #quorum 2/2
+6767:X 14 Jun 2019 10:10:23.252 # Next failover delay: I will not start a failover before Fri Jun 14 10:10:42 2019
+6767:X 14 Jun 2019 10:10:42.528 # +new-epoch 9
+6767:X 14 Jun 2019 10:10:42.533 # +vote-for-leader 75d6da2fe2b67695af9e015c8fc39766a02e7a41 9
+6767:X 14 Jun 2019 10:10:42.555 # Next failover delay: I will not start a failover before Fri Jun 14 10:11:02 2019
+6767:X 14 Jun 2019 10:11:03.010 # +new-epoch 10
+6767:X 14 Jun 2019 10:11:03.010 # +try-failover master redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.016 # +vote-for-leader 547b4d726635832d950a4af6dae166889c71c0f1 10
+6767:X 14 Jun 2019 10:11:03.026 # 75d6da2fe2b67695af9e015c8fc39766a02e7a41 voted for 547b4d726635832d950a4af6dae166889c71c0f1 10
+6767:X 14 Jun 2019 10:11:03.028 # cb7a3251ac116a0381b70622a9433ee72bc86d34 voted for 547b4d726635832d950a4af6dae166889c71c0f1 10
+6767:X 14 Jun 2019 10:11:03.072 # +elected-leader master redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.072 # +failover-state-select-slave master redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.155 # +selected-slave slave 172.16.63.52:6387 172.16.63.52 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.156 * +failover-state-send-slaveof-noone slave 172.16.63.52:6387 172.16.63.52 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.247 * +failover-state-wait-promotion slave 172.16.63.52:6387 172.16.63.52 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.443 # +promoted-slave slave 172.16.63.52:6387 172.16.63.52 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.443 # +failover-state-reconf-slaves master redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:03.510 * +slave-reconf-sent slave 172.16.63.57:6387 172.16.63.57 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:04.147 # -odown master redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:04.203 * +slave-reconf-inprog slave 172.16.63.57:6387 172.16.63.57 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:05.268 * +slave-reconf-done slave 172.16.63.57:6387 172.16.63.57 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:05.329 * +slave-reconf-sent slave 172.16.63.53:6387 172.16.63.53 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:06.301 * +slave-reconf-inprog slave 172.16.63.53:6387 172.16.63.53 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:06.301 * +slave-reconf-done slave 172.16.63.53:6387 172.16.63.53 6387 @ redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:06.354 # +failover-end master redis_6387_config 172.16.63.51 6387
+6767:X 14 Jun 2019 10:11:06.354 # +switch-master redis_6387_config 172.16.63.51 6387 172.16.63.52 6387
+6767:X 14 Jun 2019 10:11:06.354 * +slave slave 172.16.63.57:6387 172.16.63.57 6387 @ redis_6387_config 172.16.63.52 6387
+6767:X 14 Jun 2019 10:11:06.354 * +slave slave 172.16.63.53:6387 172.16.63.53 6387 @ redis_6387_config 172.16.63.52 6387
+6767:X 14 Jun 2019 10:11:06.354 * +slave slave 172.16.63.51:6387 172.16.63.51 6387 @ redis_6387_config 172.16.63.52 6387
+6767:X 14 Jun 2019 10:11:11.408 # +sdown slave 172.16.63.51:6387 172.16.63.51 6387 @ redis_6387_config 172.16.63.52 6387
